@@ -1,2 +1,2 @@
-# DataMningTermProject
+# DataMiningTermProject
 Board Game Rating Prediction
