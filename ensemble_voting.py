@@ -81,3 +81,9 @@ class EnsembleVoting:
             ratings.append(rating)
 
         return round(sum(ratings) / len(ratings))
+
+    # Here is my effort to attempt to convert this into webapp(extra credit), have to clear all data first, and then serialize it and then just use the trained
+    # classifiers for the app program as there is size requirement from PythonAnyWhere
+    def clear_data_set(self):
+        self.x_train, self.y_train, self.x_test, self.y_test = None, None, None, None
+        self.x_df_container, self.y_df_container = None, None

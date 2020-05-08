@@ -12,12 +12,15 @@ from flask import Flask
 from flask import Flask, request, render_template
 from ensemble_voting import EnsembleVoting
 import urllib.request
+from sklearn.externals import joblib
 
 app = Flask(__name__)
 
-pickle_off = urllib.request.urlopen("http://www.kaiteli.io/EV.txt")
-EV = pickle.load(pickle_off)
+# EV = pickle.load(urllib.request.urlopen("EV.txt"))
 
+EV = pickle.load(open("EV.txt", "rb"))
+
+# EV = joblib.load("EV.pkl")
 
 @app.route("/")
 def index():
