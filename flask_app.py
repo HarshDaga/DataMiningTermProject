@@ -11,10 +11,11 @@ import pickle
 from flask import Flask
 from flask import Flask, request, render_template
 from ensemble_voting import EnsembleVoting
+import urllib.request
 
 app = Flask(__name__)
 
-pickle_off = open("EV.txt", "rb")
+pickle_off = urllib.request.urlopen("http://www.kaiteli.io/EV.txt")
 EV = pickle.load(pickle_off)
 
 
