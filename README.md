@@ -12,3 +12,6 @@ https://github.com/kaiteli14/DataMiningTermProject
 
 ## 3. Video Demo:
 https://www.youtube.com/watch?v=z9A6rye8Elw&feature=youtu.be
+
+## 4. Kaggle Notebook Link:
+https://www.kaggle.com/kaiteli14/data-mining-term-project-board-game-geek-final
